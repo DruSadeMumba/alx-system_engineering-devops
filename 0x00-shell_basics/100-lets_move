@@ -1,1 +1,2 @@
-find . -name [[:upper:]]* -exec mv -t /tmp/u {} +
+#!/bin/bash
+mv [A-Z]* /tmp/u 
