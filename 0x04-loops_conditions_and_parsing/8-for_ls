@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Display content of the current directory in list format
 for file in *; do
-    echo "$file"
+    echo "${file##*-}"
 done
