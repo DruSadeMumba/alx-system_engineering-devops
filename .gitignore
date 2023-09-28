@@ -1,1 +1,6 @@
 /.idea/
+.DS_Store
+
+#project files
+/0x04-loops_conditions_and_parsing/apache-access.log
+
