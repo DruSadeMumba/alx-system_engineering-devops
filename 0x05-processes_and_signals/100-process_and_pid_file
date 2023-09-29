@@ -9,7 +9,7 @@ delete_file() {
   exit
 }
 trap 'echo "Y U no love me?!"' SIGINT
-trap 'echo "I hate the kill command && delete_file"' SIGTERM
-trap delete_file SIGQUIT
+trap 'echo "I hate the kill command"; delete_file' SIGTERM
+trap 'echo "I hate the kill command"; delete_file' SIGQUIT
 echo $$ > /var/run/myscript.pid
 while :; do echo "To infinity and beyond"; sleep 2; done
