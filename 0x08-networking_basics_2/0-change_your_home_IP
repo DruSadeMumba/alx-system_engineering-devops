@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # Bash script that configures an Ubuntu server
-
 LH_IP="127.0.0.2 localhost"
 FB_IP="8.8.8.8 facebook.com"
 cp /etc/hosts ~/hosts.new
-sed -i s/^172.*$/"$LH_IP\n$FB_IP"/ ~/hosts.new
+sed -i s/^127.*$/"$LH_IP\n$FB_IP"/ ~/hosts.new
 cp -f ~/hosts.new /etc/hosts
