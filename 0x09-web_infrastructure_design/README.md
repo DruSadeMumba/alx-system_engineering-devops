@@ -7,5 +7,6 @@
 <span style="display:block;text-align:center">![task 2 screenshot](images/1-distributed_web_infrastructure.png)</span>
 
 2. Secured and monitored web infrastructure
+<span style="display:block;text-align:center">![task 2 screenshot](images/2-secured_and_monitored_web_infrastructure.png)</span>
 
 3. Scale up
