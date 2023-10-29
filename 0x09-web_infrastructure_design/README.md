@@ -4,6 +4,7 @@
 <span style="display:block;text-align:center">![task 1 screenshot](images/0-simple_web_stack.png)</span>
 
 1. Distributed web infrastructure
+<span style="display:block;text-align:center">![task 2 screenshot](images/1-distributed_web_infrastructure.png)</span>
 
 2. Secured and monitored web infrastructure
 
