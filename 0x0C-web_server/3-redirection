@@ -13,11 +13,9 @@ SERVER_CONFIG=\
 	root /var/www/html;
 	index index.html index.htm index.nginx-debian.html;
 	server_name _;
+	rewrite ^/redirect_me https://www.google.com/;
 	location / {
 		try_files \$uri \$uri/ =404;
-	}
-	if (\$request_filename ~ redirect_me){
-		rewrite ^ https://www.google.com/;
 	}
 }"
 
