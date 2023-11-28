@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-<<<<<<< HEAD
-=======
-# Installs, configures, and starts the server
+# Redirect the webpage
 apt-get update
 apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
@@ -28,4 +26,3 @@ if ! service nginx status > /dev/null; then
 else
 	service nginx restart
 fi
->>>>>>> e3e8cec976caae6ee8e47248c31c4bdf09edacc6
