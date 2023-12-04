@@ -3,13 +3,12 @@
 exec {'update':
   provider => shell,
   command  => 'sudo apt-get -y update',
-  before   => Exec['install Nginx'],
+  before   => Package['nginx'],
 }
 
-exec {'install Nginx':
-  provider => shell,
-  command  => 'sudo apt-get -y install nginx',
-  before   => Exec['add_header'],
+package { 'nginx':
+  ensure => installed,
+  before => Exec['header'],
 }
 
 exec { 'add_header':
