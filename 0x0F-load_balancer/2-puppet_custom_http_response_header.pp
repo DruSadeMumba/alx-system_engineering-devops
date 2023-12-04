@@ -1,7 +1,14 @@
 # Add a custom HTTP header with Puppet
 
-package { 'nginx':
-  ensure => installed,
+exec {'update':
+  provider => shell,
+  command  => 'sudo apt-get -y update',
+  before   => Exec['install Nginx'],
+}
+
+exec {'install Nginx':
+  provider => shell,
+  command  => 'sudo apt-get -y install nginx',
   before   => Exec['header'],
 }
 
