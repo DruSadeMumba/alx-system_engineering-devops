@@ -8,7 +8,7 @@ exec {'update':
 
 package { 'nginx':
   ensure => installed,
-  before => Exec['header'],
+  before => Exec['add_header'],
 }
 
 exec { 'add_header':
