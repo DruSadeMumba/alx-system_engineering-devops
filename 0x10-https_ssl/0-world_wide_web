@@ -11,5 +11,6 @@ if [ "$#" == 1 ]; then
   for sub_dom in "${sub_doms[@]}"; do
     func "$1" "$sub_dom"
   done
+  elif [ "$#" == 2 ]; then
+    func "$1" "$2"
 fi
-func "$1" "$2"
