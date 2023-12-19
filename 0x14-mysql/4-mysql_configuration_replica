@@ -42,4 +42,4 @@ log_bin         = /var/log/mysql/mysql-bin.log
 # Database to Replicate
 binlog_do_db    = tyrell_corp
 # Replica location
-relay-log       = /var/log/mysql/rep-mysql-bin.log
+relay-log       = /var/log/mysql/mysql-relay-bin.log
