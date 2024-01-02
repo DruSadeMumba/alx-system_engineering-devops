@@ -11,11 +11,11 @@ def get_progress(emp_id):
     res = requests.get(url)
 
     if res.status_code == 200:
-        tsks = res.json()
-        comp = [task for task in tsks if task["completed"]]
+        tasks = res.json()
+        comp = [task for task in tasks if task["completed"]]
         name = requests.get(f"{base}/users/{sys.argv[1]}").json().get("name")
 
-        print(f"Employee {name} is done with tasks({len(comp)}/{len(tsks)}):")
+        print(f"Employee {name} is done with tasks({len(comp)}/{len(tasks)}):")
         for task in comp:
             print(f"\t {task['title']}")
     else:
