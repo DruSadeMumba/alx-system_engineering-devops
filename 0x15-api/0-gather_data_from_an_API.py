@@ -17,7 +17,7 @@ def get_progress(emp_id):
 
         print(f"Employee {name} is done with tasks({len(comp)}/{len(tsks)}):")
         for task in comp:
-            print(f"\t{task['title']}")
+            print(f"\t {task['title']}")
     else:
         print("Error")
 
