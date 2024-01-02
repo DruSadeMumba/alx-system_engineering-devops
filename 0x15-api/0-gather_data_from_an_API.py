@@ -15,7 +15,7 @@ def get_progress(emp_id):
         comp = [task for task in tsks if task["completed"]]
         name = requests.get(f"{base}/users/{sys.argv[1]}").json().get("name")
 
-        print(f"Employee {name} is done with tasks ({len(comp)}/{len(tsks)}):")
+        print(f"Employee {name} is done with tasks({len(comp)}/{len(tsks)}):")
         for task in comp:
             print(f"\t{task['title']}")
     else:
