@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
 # No service interruption
 
-pgrep gunicorn | xargs kill -HUP
+pids=$(pgrep gunicorn)
+
+if [ -z "$pids" ]; then
+    exit 1
+fi
+
+for pid in $pids; do
+    kill -HUP "$pid"
+done
