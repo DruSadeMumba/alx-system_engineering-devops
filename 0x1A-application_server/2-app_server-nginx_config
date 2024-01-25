@@ -3,9 +3,9 @@ server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
 
-	server_name 52.204.67.182
+	server_name 52.204.67.182;
 
-	add_header X-Served-By 402643-web-01
+	add_header X-Served-By 402643-web-01;
 
 
 	location /airbnb-onepage/ {
